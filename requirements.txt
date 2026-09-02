@@ -1,0 +1,12 @@
+# Phase 0/1 requirements only — deliberately minimal.
+# Heavy deps (torch, sentence-transformers, faiss, rerankers) get added in Phase 3
+# right before the embedding sweep, not now — see project plan for why we're
+# staging installs rather than front-loading everything.
+
+pyyaml==6.0.2
+requests==2.32.3
+tqdm==4.67.1
+python-dotenv==1.0.1
+pandas==2.2.3
+tenacity==9.0.0        # retry logic for EDGAR/API calls
+datasets==3.2.0        # HuggingFace datasets, for pulling HotpotQA

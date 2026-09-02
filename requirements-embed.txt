@@ -1,0 +1,9 @@
+# Phase 2+ additions — embedding model + Groq client.
+# Installed separately from requirements.txt so Phase 0/1 stayed lightweight.
+# torch is CPU-only (no GPU on this machine) — smaller wheel, no CUDA deps.
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+sentence-transformers==3.3.1
+groq>=1.6.0
+numpy==2.2.1

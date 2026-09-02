@@ -1,0 +1,109 @@
+# rag-eval/config/settings.yaml
+# Single source of truth for every tunable in the project.
+# Ablation runs override specific keys via CLI flags or run-specific YAML overlays —
+# they should NOT edit this file in place, so this file always reflects the "current default" config.
+
+project:
+  name: rag-eval
+  seed: 42
+
+paths:
+  raw_dir: data/raw
+  manifest_dir: data/manifest
+  processed_dir: data/processed
+
+# ---------------------------------------------------------------------------
+# Corpus A: HotpotQA distractor subset (gold-labeled, for real IR metrics)
+# ---------------------------------------------------------------------------
+corpus_a:
+  name: hotpotqa
+  split: distractor          # distractor setting includes gold + hard-negative paragraphs
+  n_questions: 2000          # subset size — tune down if disk/time constrained
+  hf_dataset: "hotpotqa/hotpot_qa"
+  hf_config: "distractor"
+
+# ---------------------------------------------------------------------------
+# Corpus B: SEC 10-K filings (messy real PDFs, provenance-verifiable via EDGAR)
+# ---------------------------------------------------------------------------
+corpus_b:
+  name: sec_10k
+  user_agent: "REPLACE_ME ajaz.research@example.com"   # EDGAR requires a real contact string — fill this in
+  n_filings: 100
+  filing_type: "10-K"
+  date_from: "2025-01-01"    # keep filings recent enough to postdate generator's training cutoff
+  date_to: "2026-08-01"
+  request_delay_seconds: 0.3 # stay well under EDGAR's fair-access rate limits
+  edgar_full_text_search_url: "https://efts.sec.gov/LATEST/search-index"
+  edgar_submissions_url: "https://data.sec.gov/submissions"
+  edgar_archives_base: "https://www.sec.gov/Archives/edgar/data"
+
+# ---------------------------------------------------------------------------
+# Chunking (ablation axis — these are DEFAULTS, swept over in Phase 3)
+# ---------------------------------------------------------------------------
+chunking:
+  strategy: recursive        # options: recursive | sentence_window | table_aware | semantic
+  chunk_size: 512
+  chunk_overlap: 0.15         # fraction of chunk_size
+  table_aware_for_corpus_b: true
+
+# ---------------------------------------------------------------------------
+# Embeddings (ablation axis)
+# ---------------------------------------------------------------------------
+embeddings:
+  candidates:
+    - name: bge-small-en-v1.5
+      hf_id: BAAI/bge-small-en-v1.5
+      dim: 384
+    - name: bge-m3
+      hf_id: BAAI/bge-m3
+      dim: 1024
+    - name: nomic-embed-text
+      hf_id: nomic-ai/nomic-embed-text-v1.5
+      dim: 768
+  default: bge-small-en-v1.5   # used for the naive baseline in Phase 2
+  batch_size: 32
+
+# ---------------------------------------------------------------------------
+# Retrieval (ablation axis)
+# ---------------------------------------------------------------------------
+retrieval:
+  mode: dense                 # options: dense | bm25 | hybrid_rrf
+  top_k_candidates: [3, 5, 10, 20]  # sweep range for top-k
+  hybrid_rrf_k: 60
+  reranker:
+    enabled: false             # flipped on for the reranker ablation arm
+    model: BAAI/bge-reranker-base
+
+# ---------------------------------------------------------------------------
+# Generation
+# ---------------------------------------------------------------------------
+generation:
+  provider: groq
+  model: openai/gpt-oss-20b
+  temperature: 0.0
+  max_tokens: 300
+  require_citations: true 
+
+# ---------------------------------------------------------------------------
+# Judge (MUST be a different model family than the generator — anti-self-preference)
+# Both generator and judge run on Groq's free tier — no cost, no credit card.
+# Judge is GPT-OSS-120B, deliberately a different architecture family than the
+# generator's Llama 3.3 70B, to avoid self-preference bias in judgments.
+# ---------------------------------------------------------------------------
+judge:
+  provider: groq
+  model: openai/gpt-oss-120b
+  calibration_sample_size: 200 # hand-labeled audit set size
+
+# ---------------------------------------------------------------------------
+# Eval harness
+# ---------------------------------------------------------------------------
+eval:
+  metrics_retrieval: [recall_at_k, mrr, ndcg_at_k, context_precision]
+  metrics_generation: [faithfulness, answer_correctness, citation_precision, citation_recall, abstention_accuracy]
+  bootstrap_resamples: 1000
+  ci_level: 0.95
+
+mlflow:
+  tracking_uri: "file:./mlruns"
+  experiment_name: rag-eval

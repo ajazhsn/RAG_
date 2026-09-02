@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Judge Calibration — Hand Labeling</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; max-width: 900px; margin: 20px auto; padding: 0 16px; background: #1a1a1a; color: #e8e8e8; }
+  h1 { font-size: 18px; color: #aaa; font-weight: normal; }
+  .progress { font-size: 14px; color: #888; margin-bottom: 16px; }
+  .card { background: #252525; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+  .label { font-size: 12px; text-transform: uppercase; color: #888; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .question { font-size: 17px; margin-bottom: 4px; }
+  .gold { color: #7fc97f; font-size: 14px; }
+  .passage { background: #2f2f2f; padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; font-size: 14px; line-height: 1.5; }
+  .passage-num { color: #ffb454; font-weight: bold; margin-right: 6px; }
+  .answer { font-size: 15px; line-height: 1.5; background: #2f2f2f; padding: 12px; border-radius: 6px; }
+  .rating-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+  .rating-row .label { min-width: 110px; margin-bottom: 0; }
+  button.opt { background: #333; border: 1px solid #444; color: #ccc; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  button.opt:hover { background: #3a3a3a; }
+  button.opt.selected { background: #4a7fd6; border-color: #4a7fd6; color: white; }
+  textarea { width: 100%; background: #2f2f2f; border: 1px solid #444; color: #eee; border-radius: 6px; padding: 8px; font-size: 13px; box-sizing: border-box; }
+  .nav { display: flex; justify-content: space-between; margin-top: 16px; }
+  .nav button { background: #333; color: #ccc; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  .nav button:disabled { opacity: 0.4; cursor: default; }
+  .hint { font-size: 12px; color: #666; margin-top: 4px; }
+  .done-badge { color: #7fc97f; font-size: 13px; margin-left: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Judge Calibration — Hand Labeling</h1>
+<div class="progress" id="progress">Loading...</div>
+<div style="margin-bottom: 12px;">
+  <input type="text" id="jumpBox" placeholder="Paste question_id and press Enter to jump" style="width: 340px; padding: 6px 8px; background: #2f2f2f; border: 1px solid #444; color: #eee; border-radius: 6px; font-size: 13px;">
+</div>
+
+<div class="card">
+  <div class="label">Question</div>
+  <div class="question" id="question"></div>
+  <div class="gold" id="gold"></div>
+</div>
+
+<div class="card">
+  <div class="label">Retrieved Passages</div>
+  <div id="passages"></div>
+</div>
+
+<div class="card">
+  <div class="label">Generated Answer</div>
+  <div class="answer" id="answer"></div>
+</div>
+
+<div class="card">
+  <div class="rating-row">
+    <div class="label">Faithfulness</div>
+    <button class="opt" data-field="faithfulness" data-value="yes">Yes (q)</button>
+    <button class="opt" data-field="faithfulness" data-value="partial">Partial (w)</button>
+    <button class="opt" data-field="faithfulness" data-value="no">No (e)</button>
+    <span class="hint">Does the answer reflect only what's in the passages?</span>
+  </div>
+  <div class="rating-row">
+    <div class="label">Correctness</div>
+    <button class="opt" data-field="correctness" data-value="yes">Yes (a)</button>
+    <button class="opt" data-field="correctness" data-value="partial">Partial (s)</button>
+    <button class="opt" data-field="correctness" data-value="no">No (d)</button>
+    <span class="hint">Is the answer actually right, regardless of wording?</span>
+  </div>
+  <textarea id="notes" rows="2" placeholder="Optional note (anything odd, ambiguous, etc.)"></textarea>
+</div>
+
+<div class="nav">
+  <button id="prevBtn">&larr; Prev</button>
+  <button id="nextBtn">Next &rarr;</button>
+</div>
+
+<script>
+let items = [];
+let labels = {};
+let idx = 0;
+
+async function init() {
+  items = await (await fetch('/api/items')).json();
+  labels = await (await fetch('/api/labels')).json();
+  // resume at first unlabeled item
+  idx = items.findIndex(it => !labels[it.question_id]);
+  if (idx === -1) idx = 0;
+  render();
+}
+
+function render() {
+  const item = items[idx];
+  const existing = labels[item.question_id] || {};
+
+  document.getElementById('progress').innerText =
+    `Item ${idx + 1} / ${items.length} — ${Object.keys(labels).length} labeled so far`;
+  document.getElementById('question').innerText = item.question;
+  document.getElementById('gold').innerText = 'Gold answer: ' + item.gold_answer;
+  document.getElementById('answer').innerText = item.generated_answer || '(no answer generated)';
+
+  const passagesDiv = document.getElementById('passages');
+  passagesDiv.innerHTML = '';
+  item.retrieved_passages.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'passage';
+    div.innerHTML = `<span class="passage-num">[${i + 1}]</span>${p.text}`;
+    passagesDiv.appendChild(div);
+  });
+
+  document.getElementById('notes').value = existing.notes || '';
+
+  document.querySelectorAll('button.opt').forEach(btn => {
+    const field = btn.dataset.field;
+    btn.classList.toggle('selected', existing[field] === btn.dataset.value);
+  });
+
+  document.getElementById('prevBtn').disabled = idx === 0;
+}
+
+async function setRating(field, value) {
+  const item = items[idx];
+  const current = labels[item.question_id] || {};
+  current.question_id = item.question_id;
+  current[field] = value;
+  current.notes = document.getElementById('notes').value;
+  labels[item.question_id] = current;
+
+  await fetch('/api/labels', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(current),
+  });
+  render();
+}
+
+document.querySelectorAll('button.opt').forEach(btn => {
+  btn.addEventListener('click', () => setRating(btn.dataset.field, btn.dataset.value));
+});
+
+document.getElementById('notes').addEventListener('blur', () => {
+  const item = items[idx];
+  const current = labels[item.question_id] || {};
+  current.question_id = item.question_id;
+  current.notes = document.getElementById('notes').value;
+  labels[item.question_id] = current;
+  fetch('/api/labels', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(current),
+  });
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (idx < items.length - 1) { idx++; render(); }
+});
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if (idx > 0) { idx--; render(); }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (document.activeElement.tagName === 'TEXTAREA' || document.activeElement.id === 'jumpBox') return;
+  const map = {
+    'q': ['faithfulness', 'yes'], 'w': ['faithfulness', 'partial'], 'e': ['faithfulness', 'no'],
+    'a': ['correctness', 'yes'], 's': ['correctness', 'partial'], 'd': ['correctness', 'no'],
+  };
+  if (map[e.key]) { setRating(...map[e.key]); }
+  if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+  if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+});
+
+document.getElementById('jumpBox').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const target = e.target.value.trim();
+    const foundIdx = items.findIndex(it => it.question_id === target);
+    if (foundIdx !== -1) {
+      idx = foundIdx;
+      render();
+      e.target.value = '';
+      e.target.blur();
+    } else {
+      e.target.style.borderColor = '#d64f4f';
+      setTimeout(() => { e.target.style.borderColor = '#444'; }, 800);
+    }
+  }
+});
+
+init();
+</script>
+
+</body>
+</html>

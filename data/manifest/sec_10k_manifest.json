@@ -1,0 +1,902 @@
+[
+  {
+    "cik": 1326160,
+    "company": "Duke Energy CORP",
+    "accession_number": "0001326160-26-000014",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000014/duk-20251231.htm",
+    "local_path": "data/raw/sec_10k/1326160_000132616026000014.html",
+    "sha256": "638cd653df525f8be9ec031196a2cb9ae2b44f55d719911129f9a406b3974c8f"
+  },
+  {
+    "cik": 2024306,
+    "company": "JFB Construction Holdings",
+    "accession_number": "0001193125-26-134406",
+    "filing_date": "2026-03-31",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2024306/000119312526134406/jfb-20251231.htm",
+    "local_path": "data/raw/sec_10k/2024306_000119312526134406.html",
+    "sha256": "e84b8856f3fab24000de3d4440fcae6cd6f7358dc0843a5c0d6a8a343a1bf700"
+  },
+  {
+    "cik": 1951070,
+    "company": "McGraw Hill, Inc.",
+    "accession_number": "0001951070-26-000022",
+    "filing_date": "2026-06-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1951070/000195107026000022/mh-20260331.htm",
+    "local_path": "data/raw/sec_10k/1951070_000195107026000022.html",
+    "sha256": "1f23cb96ccdc85ff3219921f2871f2f7ad16947f5bf1a9ff456c5fd2e40cc80b"
+  },
+  {
+    "cik": 1830033,
+    "company": "PureCycle Technologies, Inc.",
+    "accession_number": "0001193125-26-076801",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1830033/000119312526076801/pct-20251231.htm",
+    "local_path": "data/raw/sec_10k/1830033_000119312526076801.html",
+    "sha256": "54447e55d22c0c52075c45844e68012cc250ff1e6103ff97fc91cb6d987d628f"
+  },
+  {
+    "cik": 1710155,
+    "company": "National Vision Holdings, Inc.",
+    "accession_number": "0001628280-26-014379",
+    "filing_date": "2026-03-04",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1710155/000162828026014379/eye-20260103.htm",
+    "local_path": "data/raw/sec_10k/1710155_000162828026014379.html",
+    "sha256": "41dbd2a188d7ee05a08d09c6a8ae2748343d6cae9d69c62d5e06da2a47d96de2"
+  },
+  {
+    "cik": 1855509,
+    "company": "Twin Vee PowerCats, Co.",
+    "accession_number": "0001731122-26-000317",
+    "filing_date": "2026-02-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1855509/000173112226000317/e7378_10-k.htm",
+    "local_path": "data/raw/sec_10k/1855509_000173112226000317.html",
+    "sha256": "e140eab11221086b5fb4c63973aa4e93abd9490bf88848a10fbbf76cd45fc88b"
+  },
+  {
+    "cik": 2032528,
+    "company": "Roman DBDR Acquisition Corp. II",
+    "accession_number": "0001104659-26-023575",
+    "filing_date": "2026-03-04",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2032528/000110465926023575/drdb-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/2032528_000110465926023575.html",
+    "sha256": "c101d0c30624035450be5cd9efe45f2115600a62c0037f37d4cd63b0dd3b158b"
+  },
+  {
+    "cik": 1099219,
+    "company": "METLIFE INC",
+    "accession_number": "0001099219-26-000013",
+    "filing_date": "2026-02-19",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000013/met-20251231.htm",
+    "local_path": "data/raw/sec_10k/1099219_000109921926000013.html",
+    "sha256": "394004175952d41cfe12e190223d432a9cfac73647819b488015de5523b31d64"
+  },
+  {
+    "cik": 1527541,
+    "company": "Wheeler Real Estate Investment Trust, Inc.",
+    "accession_number": "0001527541-26-000050",
+    "filing_date": "2026-03-05",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1527541/000152754126000050/whlr-20251231.htm",
+    "local_path": "data/raw/sec_10k/1527541_000152754126000050.html",
+    "sha256": "3ada70a01aee0313aebeb0880476b381cf0fdb2fc0f18660b7459a63449cc285"
+  },
+  {
+    "cik": 2020987,
+    "company": "YHN Acquisition I Ltd",
+    "accession_number": "0001683168-26-002441",
+    "filing_date": "2026-03-31",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2020987/000168316826002441/yhn_i10k-123125.htm",
+    "local_path": "data/raw/sec_10k/2020987_000168316826002441.html",
+    "sha256": "46ab31a8cf1424b31f69db01724ca7db37a90edc1fdde6a2b58370a282055afc"
+  },
+  {
+    "cik": 29002,
+    "company": "DIODES INC /DEL/",
+    "accession_number": "0001193125-26-044918",
+    "filing_date": "2026-02-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/29002/000119312526044918/diod-20251231.htm",
+    "local_path": "data/raw/sec_10k/29002_000119312526044918.html",
+    "sha256": "d7c371857c4ad89d30e740eff007f4618283440a4500af042afdb6b8805c6f89"
+  },
+  {
+    "cik": 2041493,
+    "company": "Alussa Energy Acquisition Corp. II",
+    "accession_number": "0001213900-26-035639",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2041493/000121390026035639/ea0282460-10k_alussa2.htm",
+    "local_path": "data/raw/sec_10k/2041493_000121390026035639.html",
+    "sha256": "6b13a833401cd197c6195ed4556ec9b9d801a2bca99cbc04f007f9f5db3e8e94"
+  },
+  {
+    "cik": 1423902,
+    "company": "Western Midstream Partners, LP",
+    "accession_number": "0001423902-26-000030",
+    "filing_date": "2026-02-18",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1423902/000142390226000030/wes-20251231.htm",
+    "local_path": "data/raw/sec_10k/1423902_000142390226000030.html",
+    "sha256": "935d1f0bdcb2403f52c8e31fe878d5fc3ff7d8924690c18b46d372116391cb6a"
+  },
+  {
+    "cik": 2065779,
+    "company": "D. Boral ARC Acquisition I Corp.",
+    "accession_number": "0001829126-26-002312",
+    "filing_date": "2026-03-16",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2065779/000182912626002312/dboralarcacq1_10k.htm",
+    "local_path": "data/raw/sec_10k/2065779_000182912626002312.html",
+    "sha256": "50e3a56dcb9286b04f0d53e9bdfe58f390e8b31bc6b56e7be7f94f43adeecea3"
+  },
+  {
+    "cik": 766704,
+    "company": "WELLTOWER INC.",
+    "accession_number": "0000766704-26-000010",
+    "filing_date": "2026-02-12",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000010/well-20251231.htm",
+    "local_path": "data/raw/sec_10k/766704_000076670426000010.html",
+    "sha256": "36552c3944acac8d12a85bd68c209d65b2aacb6c85903515321c7de839af74d1"
+  },
+  {
+    "cik": 885245,
+    "company": "BUCKLE INC",
+    "accession_number": "0000885245-26-000012",
+    "filing_date": "2026-04-01",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/885245/000088524526000012/bke-20260131.htm",
+    "local_path": "data/raw/sec_10k/885245_000088524526000012.html",
+    "sha256": "a94af6473011267d9d5b78adb6b0dfcca72ec99f24652a2a95f51cc66d3fd179"
+  },
+  {
+    "cik": 820313,
+    "company": "AMPHENOL CORP /DE/",
+    "accession_number": "0001104659-26-013549",
+    "filing_date": "2026-02-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/820313_000110465926013549.html",
+    "sha256": "59e39a503c822c418863e7e7dfd89d10bbfbb32301afe3016a2269978cc037e7"
+  },
+  {
+    "cik": 894158,
+    "company": "Theriva Biologics, Inc.",
+    "accession_number": "0001104659-26-026767",
+    "filing_date": "2026-03-12",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/894158/000110465926026767/tmb-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/894158_000110465926026767.html",
+    "sha256": "1ed8cade87327079e810a3375b193edd05442c2f627cad0d7a26f1d719998320"
+  },
+  {
+    "cik": 915779,
+    "company": "DAKTRONICS INC /SD/",
+    "accession_number": "0001628280-26-045262",
+    "filing_date": "2026-06-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/915779/000162828026045262/dakt-20260502.htm",
+    "local_path": "data/raw/sec_10k/915779_000162828026045262.html",
+    "sha256": "da9024d944c64526fd900b68141e064bc4fd275e819fcfbdff682ee0a71c9bb0"
+  },
+  {
+    "cik": 1014763,
+    "company": "Ainos, Inc.",
+    "accession_number": "0001493152-26-013579",
+    "filing_date": "2026-03-30",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1014763/000149315226013579/form10-k.htm",
+    "local_path": "data/raw/sec_10k/1014763_000149315226013579.html",
+    "sha256": "f70dbb4eac30e763eff1c6d7746a35009d6f492a47620072ea6845652be09d27"
+  },
+  {
+    "cik": 1587987,
+    "company": "NewtekOne, Inc.",
+    "accession_number": "0001628280-26-016503",
+    "filing_date": "2026-03-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1587987/000162828026016503/newt-20251231.htm",
+    "local_path": "data/raw/sec_10k/1587987_000162828026016503.html",
+    "sha256": "f45b1d8313e506473fb401659be80c160141a63e3895ab94426a3b0d632e919e"
+  },
+  {
+    "cik": 1840572,
+    "company": "Lucky Strike Entertainment Corp",
+    "accession_number": "0001840572-25-000012",
+    "filing_date": "2025-08-28",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1840572/000184057225000012/bowl-20250629.htm",
+    "local_path": "data/raw/sec_10k/1840572_000184057225000012.html",
+    "sha256": "011fd550abc53f9aa03f33103ff4c21a4422db63a878e27b36bc1069574161c5"
+  },
+  {
+    "cik": 1605481,
+    "company": "Nevada Canyon Gold Corp.",
+    "accession_number": "0001493152-26-013949",
+    "filing_date": "2026-03-31",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1605481/000149315226013949/form10-k.htm",
+    "local_path": "data/raw/sec_10k/1605481_000149315226013949.html",
+    "sha256": "2057f57b10e8df2e4c1481cf485c56f01bc8a50ddba2b54c2aa36b653016611d"
+  },
+  {
+    "cik": 1383149,
+    "company": "INVESCO DB US DOLLAR INDEX BEARISH FUND",
+    "accession_number": "0001193125-26-083562",
+    "filing_date": "2026-03-02",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1383149/000119312526083562/udn-20251231.htm",
+    "local_path": "data/raw/sec_10k/1383149_000119312526083562.html",
+    "sha256": "353395e46be2e13cabcb0b701712303468b0490a01ee602b1e0d4bcbaaf12e3d"
+  },
+  {
+    "cik": 1026214,
+    "company": "FEDERAL HOME LOAN MORTGAGE CORP",
+    "accession_number": "0001026214-26-000021",
+    "filing_date": "2026-02-12",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1026214/000102621426000021/fmcc-20251231.htm",
+    "local_path": "data/raw/sec_10k/1026214_000102621426000021.html",
+    "sha256": "81e38b8b99d36483d8ccb017c57714ce7a91668c3348dd75380df88cb12979a8"
+  },
+  {
+    "cik": 1789832,
+    "company": "Hess Midstream LP",
+    "accession_number": "0001193125-26-071592",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1789832/000119312526071592/hesm-20251231.htm",
+    "local_path": "data/raw/sec_10k/1789832_000119312526071592.html",
+    "sha256": "221ac9ddbcd50ad3c254a171835f750efe426e4d5521f70b5d82dbc7ca832583"
+  },
+  {
+    "cik": 1631569,
+    "company": "Community Healthcare Trust Inc",
+    "accession_number": "0001631569-26-000012",
+    "filing_date": "2026-02-17",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1631569/000163156926000012/chct-20251231.htm",
+    "local_path": "data/raw/sec_10k/1631569_000163156926000012.html",
+    "sha256": "dfc2f1e38b5b8ac91135ab64cf7604a1f1b8a31b793558cc528723f8153500c0"
+  },
+  {
+    "cik": 1571283,
+    "company": "Rexford Industrial Realty, Inc.",
+    "accession_number": "0001571283-26-000006",
+    "filing_date": "2026-02-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1571283/000157128326000006/rexr-20251231.htm",
+    "local_path": "data/raw/sec_10k/1571283_000157128326000006.html",
+    "sha256": "c296dab250715a99a088c2b5f9b99a18a42c79869096c5adf714c15b2e400dd9"
+  },
+  {
+    "cik": 1070750,
+    "company": "HOST HOTELS & RESORTS, INC.",
+    "accession_number": "0001070750-26-000054",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "local_path": "data/raw/sec_10k/1070750_000107075026000054.html",
+    "sha256": "4d3aeb775f2d7c3f9bb74bb518b21ea0caefc018a43e8901947888a158e1a4bd"
+  },
+  {
+    "cik": 1781162,
+    "company": "Momentus Inc.",
+    "accession_number": "0001628280-26-022291",
+    "filing_date": "2026-03-31",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1781162/000162828026022291/mnts-20251231.htm",
+    "local_path": "data/raw/sec_10k/1781162_000162828026022291.html",
+    "sha256": "1e5d4d715314b624249a6b8974771bed39aecbed05b7fdfedd62e0d8a2d8d5d5"
+  },
+  {
+    "cik": 1747777,
+    "company": "Blue Owl Technology Finance Corp.",
+    "accession_number": "0001747777-26-000012",
+    "filing_date": "2026-02-18",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000012/ortf-20251231.htm",
+    "local_path": "data/raw/sec_10k/1747777_000174777726000012.html",
+    "sha256": "a5f31c77ca93ba07bffce3482916ddc212404e1e4ceb219386afc2f19c09561e"
+  },
+  {
+    "cik": 1944048,
+    "company": "Kenvue Inc.",
+    "accession_number": "0001944048-26-000030",
+    "filing_date": "2026-02-20",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000030/kvue-20251228.htm",
+    "local_path": "data/raw/sec_10k/1944048_000194404826000030.html",
+    "sha256": "2190ca16d18777b34339f746920fe85e1d4a7c38b6a4fca4f9f16c0b39a1555c"
+  },
+  {
+    "cik": 1370053,
+    "company": "ANAPTYSBIO, INC",
+    "accession_number": "0001193125-26-088290",
+    "filing_date": "2026-03-03",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1370053/000119312526088290/anab-20251231.htm",
+    "local_path": "data/raw/sec_10k/1370053_000119312526088290.html",
+    "sha256": "8997bab2cff84742b41987933518c36ec20d7d1c0906a8f3af61263b5bbd0394"
+  },
+  {
+    "cik": 1759774,
+    "company": "Postal Realty Trust, Inc.",
+    "accession_number": "0001628280-26-011212",
+    "filing_date": "2026-02-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1759774/000162828026011212/pstl-20251231.htm",
+    "local_path": "data/raw/sec_10k/1759774_000162828026011212.html",
+    "sha256": "12554e248e0c6311f7aa470564c6ee69adc3d7ec72bf7cf2093e05eff080d531"
+  },
+  {
+    "cik": 2070887,
+    "company": "Crown Reserve Acquisition Corp. I",
+    "accession_number": "0001213900-26-035701",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2070887/000121390026035701/ea0281762-10k_crown1.htm",
+    "local_path": "data/raw/sec_10k/2070887_000121390026035701.html",
+    "sha256": "1be180a1bd186f94acd90a1f8491bf5e74c71ea4aca6bc705974272099a1efa9"
+  },
+  {
+    "cik": 1795139,
+    "company": "Green Thumb Industries Inc.",
+    "accession_number": "0001193125-26-071672",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1795139/000119312526071672/gtbif-20251231.htm",
+    "local_path": "data/raw/sec_10k/1795139_000119312526071672.html",
+    "sha256": "5423d13d8ab546c6b5bb3471962ba09ed8a6f03ea2c14387f185deed4becd9c9"
+  },
+  {
+    "cik": 1587987,
+    "company": "NewtekOne, Inc.",
+    "accession_number": "0001628280-26-016503",
+    "filing_date": "2026-03-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1587987/000162828026016503/newt-20251231.htm",
+    "local_path": "data/raw/sec_10k/1587987_000162828026016503.html",
+    "sha256": "f45b1d8313e506473fb401659be80c160141a63e3895ab94426a3b0d632e919e"
+  },
+  {
+    "cik": 1792941,
+    "company": "Genvor Inc",
+    "accession_number": "0001903596-25-000575",
+    "filing_date": "2025-12-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1792941/000190359625000575/gnvr_10q.htm",
+    "local_path": "data/raw/sec_10k/1792941_000190359625000575.html",
+    "sha256": "76bb0a0d409671444249dfb599aabe111a11187e253c22a157acc523663b1dc8"
+  },
+  {
+    "cik": 1816431,
+    "company": "Quantum-Si Inc",
+    "accession_number": "0001816431-26-000011",
+    "filing_date": "2026-03-03",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1816431/000181643126000011/qsi-20251231.htm",
+    "local_path": "data/raw/sec_10k/1816431_000181643126000011.html",
+    "sha256": "a5004c4421369b3a182b71e6b98229ffe7458741fe485145a79a44efad92e6aa"
+  },
+  {
+    "cik": 1825088,
+    "company": "Dream Finders Homes, Inc.",
+    "accession_number": "0001628280-26-010837",
+    "filing_date": "2026-02-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1825088/000162828026010837/dfh-20251231.htm",
+    "local_path": "data/raw/sec_10k/1825088_000162828026010837.html",
+    "sha256": "60630fba61a6f21dcf40b8d385d2d6d7161adf540f4504b3057d76b7a6a18dea"
+  },
+  {
+    "cik": 86312,
+    "company": "TRAVELERS COMPANIES, INC.",
+    "accession_number": "0000086312-26-000065",
+    "filing_date": "2026-02-12",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000065/trv-20251231.htm",
+    "local_path": "data/raw/sec_10k/86312_000008631226000065.html",
+    "sha256": "76b28ca1890995e6d0f3f905661f775ccf365629c99fed2578e9b5da1e684eca"
+  },
+  {
+    "cik": 1403475,
+    "company": "Bank of Marin Bancorp",
+    "accession_number": "0001403475-26-000018",
+    "filing_date": "2026-03-13",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1403475/000140347526000018/bmrc-20251231.htm",
+    "local_path": "data/raw/sec_10k/1403475_000140347526000018.html",
+    "sha256": "1b21a4e8405e5e2110a67636a04d2344fd2aa8246d5bfb31c65e25dbc2c8d883"
+  },
+  {
+    "cik": 1420520,
+    "company": "Atomera Inc",
+    "accession_number": "0001683168-26-001291",
+    "filing_date": "2026-02-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1420520/000168316826001291/atomera_i10k-123125.htm",
+    "local_path": "data/raw/sec_10k/1420520_000168316826001291.html",
+    "sha256": "96da9801505525ba900711682ea6c19ec59b314fff0f4d87f97632cf0cf1c8a6"
+  },
+  {
+    "cik": 1834105,
+    "company": "IMPACT BIOMEDICAL INC.",
+    "accession_number": "0001493152-26-009711",
+    "filing_date": "2026-03-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1834105/000149315226009711/form10-k.htm",
+    "local_path": "data/raw/sec_10k/1834105_000149315226009711.html",
+    "sha256": "ab594e1be59b3f16bee79a0b649d1fc72f0995ffe6a18e7af0381d5869919199"
+  },
+  {
+    "cik": 1870940,
+    "company": "Airsculpt Technologies, Inc.",
+    "accession_number": "0001870940-26-000011",
+    "filing_date": "2026-03-31",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1870940/000187094026000011/airs-20251231.htm",
+    "local_path": "data/raw/sec_10k/1870940_000187094026000011.html",
+    "sha256": "f668ec6d687b26dac9b95faa74e840a77de78bcf8abb981ab51223698ab6ef7c"
+  },
+  {
+    "cik": 310522,
+    "company": "FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE",
+    "accession_number": "0000310522-26-000015",
+    "filing_date": "2026-02-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/310522/000031052226000015/fnm-20251231.htm",
+    "local_path": "data/raw/sec_10k/310522_000031052226000015.html",
+    "sha256": "a5d2701b143988a86997f5185daad1c02c8dcaeccd01f5ddae8611e298c51522"
+  },
+  {
+    "cik": 1817511,
+    "company": "SOCIETY PASS INCORPORATED.",
+    "accession_number": "0001213900-25-032266",
+    "filing_date": "2025-04-16",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1817511/000121390025032266/ea0237222-10k_society.htm",
+    "local_path": "data/raw/sec_10k/1817511_000121390025032266.html",
+    "sha256": "0e4b7a171421c3167b98b2a6a5ea677152f9244a7a18317d25e693c350cf3785"
+  },
+  {
+    "cik": 1042046,
+    "company": "AMERICAN FINANCIAL GROUP INC",
+    "accession_number": "0001042046-26-000010",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1042046/000104204626000010/afg-20251231.htm",
+    "local_path": "data/raw/sec_10k/1042046_000104204626000010.html",
+    "sha256": "dd510532d475bc91d3a4c98abdf9ac6b0def902a7e509e6823e2bfb8c3938fdd"
+  },
+  {
+    "cik": 1005817,
+    "company": "TOMPKINS FINANCIAL CORP",
+    "accession_number": "0001005817-26-000027",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1005817/000100581726000027/tmp-20251231.htm",
+    "local_path": "data/raw/sec_10k/1005817_000100581726000027.html",
+    "sha256": "7c83fe2f50cccdcdb507edd4d01163f6d27fb5a48e410921b8b75264a93650ef"
+  },
+  {
+    "cik": 1530746,
+    "company": "Kaya Holdings, Inc.",
+    "accession_number": "0001903596-25-000213",
+    "filing_date": "2025-04-29",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1530746/000190359625000213/kays_10k.htm",
+    "local_path": "data/raw/sec_10k/1530746_000190359625000213.html",
+    "sha256": "67e5c5b7fdf2d61566f807d729d75178b21d6c98292f29817de209129629fd51"
+  },
+  {
+    "cik": 1174850,
+    "company": "NICOLET BANKSHARES INC",
+    "accession_number": "0001174850-26-000077",
+    "filing_date": "2026-02-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1174850/000117485026000077/nic-20251231.htm",
+    "local_path": "data/raw/sec_10k/1174850_000117485026000077.html",
+    "sha256": "d0441cfe2241e011817d2767a4267aca99ca760b4e471feefb2a9cd850ce861d"
+  },
+  {
+    "cik": 2032966,
+    "company": "TIC Solutions, Inc.",
+    "accession_number": "0001628280-26-017015",
+    "filing_date": "2026-03-12",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2032966/000162828026017015/tic-20251231.htm",
+    "local_path": "data/raw/sec_10k/2032966_000162828026017015.html",
+    "sha256": "afbf5b860332b33b95b398bf9f377bca40c3752f50515593d7f86d915556180a"
+  },
+  {
+    "cik": 1071840,
+    "company": "SolarWindow Technologies, Inc.",
+    "accession_number": "0001171843-25-007295",
+    "filing_date": "2025-11-13",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1071840/000117184325007295/f10k_111325.htm",
+    "local_path": "data/raw/sec_10k/1071840_000117184325007295.html",
+    "sha256": "dadae26a38a72bf64995cf62574f02b4f79849cbd94a90acd0ec7f0c6c5ef1c6"
+  },
+  {
+    "cik": 1539638,
+    "company": "Triumph Financial, Inc.",
+    "accession_number": "0001539638-26-000007",
+    "filing_date": "2026-02-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1539638/000153963826000007/tfin-20251231.htm",
+    "local_path": "data/raw/sec_10k/1539638_000153963826000007.html",
+    "sha256": "f82093340448dab7ad7f74d2ffcd0246e57fcb1af493dad78d178b7cf343934e"
+  },
+  {
+    "cik": 898173,
+    "company": "O REILLY AUTOMOTIVE INC",
+    "accession_number": "0000898173-26-000009",
+    "filing_date": "2026-02-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000009/orly-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/898173_000089817326000009.html",
+    "sha256": "fd313323241a318af01c0142feb603444f1bb9f8dbf1ab7bddb1cbc351045994"
+  },
+  {
+    "cik": 1561550,
+    "company": "Datadog, Inc.",
+    "accession_number": "0001628280-26-008819",
+    "filing_date": "2026-02-18",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026008819/ddog-20251231.htm",
+    "local_path": "data/raw/sec_10k/1561550_000162828026008819.html",
+    "sha256": "dcdd728cc76efaa0ca2fce5c2b6fd0e1704a77092d232ce0d931eddca8debfde"
+  },
+  {
+    "cik": 1076930,
+    "company": "NOVANTA INC",
+    "accession_number": "0001193125-26-064230",
+    "filing_date": "2026-02-23",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1076930/000119312526064230/novt-20251231.htm",
+    "local_path": "data/raw/sec_10k/1076930_000119312526064230.html",
+    "sha256": "342096782523f0f36bcfdc88e9f239e8abaff3d94f9f849a44587bb40975cf8a"
+  },
+  {
+    "cik": 2081300,
+    "company": "SPACSphere Acquisition Corp.",
+    "accession_number": "0001829126-26-002804",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2081300/000182912626002804/spacsphereacq_10k.htm",
+    "local_path": "data/raw/sec_10k/2081300_000182912626002804.html",
+    "sha256": "9403225d202b59f6a65e610544394b7698133ad82c3279bb71728cff32313cbe"
+  },
+  {
+    "cik": 1399520,
+    "company": "ONE Group Hospitality, Inc.",
+    "accession_number": "0001104659-26-032065",
+    "filing_date": "2026-03-19",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1399520/000110465926032065/stks-20251228x10k.htm",
+    "local_path": "data/raw/sec_10k/1399520_000110465926032065.html",
+    "sha256": "d6ce2a633dd91543292f5078c5df19ef2e5af51e6b51279b1ef2db1c796520e7"
+  },
+  {
+    "cik": 1817241,
+    "company": "Artiva Biotherapeutics, Inc.",
+    "accession_number": "0001193125-26-100135",
+    "filing_date": "2026-03-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1817241/000119312526100135/artv-20251231.htm",
+    "local_path": "data/raw/sec_10k/1817241_000119312526100135.html",
+    "sha256": "775c7c9560c64bb303edafb386fceb6f9276c929ccde8576025fb47eeab8ac6c"
+  },
+  {
+    "cik": 1818382,
+    "company": "Humacyte, Inc.",
+    "accession_number": "0001818382-26-000004",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1818382/000181838226000004/huma-20251231.htm",
+    "local_path": "data/raw/sec_10k/1818382_000181838226000004.html",
+    "sha256": "15aaaa9e9ab1aefe3637af883d9c93189684291ea636649573fae23ac024cb59"
+  },
+  {
+    "cik": 1630805,
+    "company": "Babcock & Wilcox Enterprises, Inc.",
+    "accession_number": "0001630805-26-000018",
+    "filing_date": "2026-03-16",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1630805/000163080526000018/bw-20251231.htm",
+    "local_path": "data/raw/sec_10k/1630805_000163080526000018.html",
+    "sha256": "ff7f4c6fb166368af81b74df66d0c7dad7ac0d5cce6022b55efbd5e53d16bd73"
+  },
+  {
+    "cik": 1907223,
+    "company": "Greenland Mines Ltd",
+    "accession_number": "0001213900-26-038629",
+    "filing_date": "2026-04-01",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1907223/000121390026038629/ea0275233-10k_green.htm",
+    "local_path": "data/raw/sec_10k/1907223_000121390026038629.html",
+    "sha256": "14e7706a64a2d065f93bdfa920bfc6ed01f97bc1d27227306f0cf008d65c937b"
+  },
+  {
+    "cik": 1823878,
+    "company": "PLAYSTUDIOS, Inc.",
+    "accession_number": "0001823878-26-000020",
+    "filing_date": "2026-03-16",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1823878/000182387826000020/myps-20251231.htm",
+    "local_path": "data/raw/sec_10k/1823878_000182387826000020.html",
+    "sha256": "3582ce2f95e4ac00c249e0e9d0817bdce7060918de1b0fca7ddcc153a4b079b8"
+  },
+  {
+    "cik": 1334325,
+    "company": "Coda Octopus Group, Inc.",
+    "accession_number": "0001493152-26-004135",
+    "filing_date": "2026-01-29",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1334325/000149315226004135/form10-k.htm",
+    "local_path": "data/raw/sec_10k/1334325_000149315226004135.html",
+    "sha256": "693aceb80976b657dc772c255a8fcfa57cb6986237d730dabfddca207a30d0b4"
+  },
+  {
+    "cik": 1522540,
+    "company": "Marqeta, Inc.",
+    "accession_number": "0001522540-26-000017",
+    "filing_date": "2026-02-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000017/mq-20251231.htm",
+    "local_path": "data/raw/sec_10k/1522540_000152254026000017.html",
+    "sha256": "d8eb383af21af4d8fe7b9a751cd48baa3cb77fc17fac5821d3a8f40c844ea375"
+  },
+  {
+    "cik": 1520048,
+    "company": "Permianville Royalty Trust",
+    "accession_number": "0001104659-26-033412",
+    "filing_date": "2026-03-23",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1520048/000110465926033412/tm269527d1_10k.htm",
+    "local_path": "data/raw/sec_10k/1520048_000110465926033412.html",
+    "sha256": "abb8f967f99e736c42602935cc53530993b2e730d2196f03b8575ca9cca8f0d4"
+  },
+  {
+    "cik": 1401914,
+    "company": "Dare Bioscience, Inc.",
+    "accession_number": "0001401914-26-000004",
+    "filing_date": "2026-03-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1401914/000140191426000004/dare-20251231.htm",
+    "local_path": "data/raw/sec_10k/1401914_000140191426000004.html",
+    "sha256": "0efb2db2a364546b8c2504e6e914e7861bbc4e643f59d76e96a2c5d8bb8421cb"
+  },
+  {
+    "cik": 1001250,
+    "company": "ESTEE LAUDER COMPANIES INC",
+    "accession_number": "0001001250-25-000099",
+    "filing_date": "2025-08-20",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125025000099/el-20250630.htm",
+    "local_path": "data/raw/sec_10k/1001250_000100125025000099.html",
+    "sha256": "e0edc76144d1478d5f9ef9470cb9d97c5403714d135f2d835adc016425678ca8"
+  },
+  {
+    "cik": 1265131,
+    "company": "Hilltop Holdings Inc.",
+    "accession_number": "0001104659-26-015264",
+    "filing_date": "2026-02-13",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1265131/000110465926015264/hth-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/1265131_000110465926015264.html",
+    "sha256": "de02a7817bf56154cc251d4b29309f9a0ae31493c26ea11e95584eb6ba491357"
+  },
+  {
+    "cik": 1541119,
+    "company": "Sound Financial Bancorp, Inc.",
+    "accession_number": "0001541119-26-000008",
+    "filing_date": "2026-03-18",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1541119/000154111926000008/sfbc-20251231.htm",
+    "local_path": "data/raw/sec_10k/1541119_000154111926000008.html",
+    "sha256": "ae6c40db21d6b90ca3f198816dfce1b5bd511da8edf78e3a50ad6a7755fb97d5"
+  },
+  {
+    "cik": 1782524,
+    "company": "Morgan Stanley Direct Lending Fund",
+    "accession_number": "0001193125-26-076632",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1782524/000119312526076632/msdl-20251231.htm",
+    "local_path": "data/raw/sec_10k/1782524_000119312526076632.html",
+    "sha256": "f18ae7702cd8d41066e8230127805ea5a7718ec586681a0837655ebe4007b214"
+  },
+  {
+    "cik": 1591956,
+    "company": "Sphere 3D Corp.",
+    "accession_number": "0001591956-26-000004",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1591956/000159195626000004/any-20251231.htm",
+    "local_path": "data/raw/sec_10k/1591956_000159195626000004.html",
+    "sha256": "83b10cb5f7a2902d5466482a1ba869ce4aed1f92f0f4b1142424eb0d4e1c2aea"
+  },
+  {
+    "cik": 46195,
+    "company": "BANK OF HAWAII CORP",
+    "accession_number": "0000046195-26-000015",
+    "filing_date": "2026-02-24",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/46195/000004619526000015/boh-20251231.htm",
+    "local_path": "data/raw/sec_10k/46195_000004619526000015.html",
+    "sha256": "a8c0c6599d8f1530db4a48d205d6dd286db06852ffd085209dd3e85c24ee9deb"
+  },
+  {
+    "cik": 1043150,
+    "company": "Eline Entertainment Group, Inc.",
+    "accession_number": "0001683168-26-002993",
+    "filing_date": "2026-04-15",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1043150/000168316826002993/eegi_i10k-123125.htm",
+    "local_path": "data/raw/sec_10k/1043150_000168316826002993.html",
+    "sha256": "e580944e9184ee8a7a11e74c6406b287d68266db0638851258ed54a1ce934160"
+  },
+  {
+    "cik": 1497645,
+    "company": "Summit Hotel Properties, Inc.",
+    "accession_number": "0001497645-26-000015",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1497645/000149764526000015/inn-20251231.htm",
+    "local_path": "data/raw/sec_10k/1497645_000149764526000015.html",
+    "sha256": "f36901a96c8f47cd039951f689e02995f1bff0fa385c01db360898c3bc16f01d"
+  },
+  {
+    "cik": 854560,
+    "company": "GREAT SOUTHERN BANCORP, INC.",
+    "accession_number": "0001104659-26-024659",
+    "filing_date": "2026-03-06",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/854560/000110465926024659/gsbc-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/854560_000110465926024659.html",
+    "sha256": "0a8c81c41115184f65f8b4cee705ea71b6a7fddbd8a4a13cb8ed942ac8d1ca1b"
+  },
+  {
+    "cik": 1441683,
+    "company": "APPIAN CORP",
+    "accession_number": "0001441683-26-000013",
+    "filing_date": "2026-02-19",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1441683/000144168326000013/appn-20251231.htm",
+    "local_path": "data/raw/sec_10k/1441683_000144168326000013.html",
+    "sha256": "054bb1990746b615e44977cc9b6c1d252fd17d0b5d5d3cc4225ee4397c732d79"
+  },
+  {
+    "cik": 2091222,
+    "company": "Space Asset Acquisition Corp.",
+    "accession_number": "0001213900-26-035748",
+    "filing_date": "2026-03-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2091222/000121390026035748/ea0282885-10k_space.htm",
+    "local_path": "data/raw/sec_10k/2091222_000121390026035748.html",
+    "sha256": "0ebd3d4abe4b07063078a44b14a9b47bd9e616daca11526c76edf402b210c965"
+  },
+  {
+    "cik": 1444839,
+    "company": "Bravo Multinational Inc.",
+    "accession_number": "0001091818-26-000044",
+    "filing_date": "2026-04-14",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1444839/000109181826000044/brvo-123125_10k.htm",
+    "local_path": "data/raw/sec_10k/1444839_000109181826000044.html",
+    "sha256": "fde64211feb074250710e49a315fb38b0d29ee489c4969adf052070c403b53c0"
+  },
+  {
+    "cik": 1719406,
+    "company": "NRX Pharmaceuticals, Inc.",
+    "accession_number": "0001437749-26-009418",
+    "filing_date": "2026-03-23",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1719406/000143774926009418/nrxp20251231_10k.htm",
+    "local_path": "data/raw/sec_10k/1719406_000143774926009418.html",
+    "sha256": "262203b830be56be43c35fe27d6162df41147e9c53088a37effc159859542ece"
+  },
+  {
+    "cik": 1053369,
+    "company": "ELITE PHARMACEUTICALS INC /NV/",
+    "accession_number": "0001493152-26-031070",
+    "filing_date": "2026-06-29",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1053369/000149315226031070/form10-k.htm",
+    "local_path": "data/raw/sec_10k/1053369_000149315226031070.html",
+    "sha256": "3e4a0229aafcd51e2d64fcabeee1bc0f0b3cadb0898a489e08b98445625be088"
+  },
+  {
+    "cik": 1121484,
+    "company": "OIL STATES INTERNATIONAL, INC",
+    "accession_number": "0001121484-26-000007",
+    "filing_date": "2026-03-04",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1121484/000112148426000007/ois-20251231.htm",
+    "local_path": "data/raw/sec_10k/1121484_000112148426000007.html",
+    "sha256": "6e7b8e1553994a0b80e397d9b0ae70c2bd11ce5f9c429e488cfbb902336f5106"
+  },
+  {
+    "cik": 1593538,
+    "company": "NAVIENT CORP",
+    "accession_number": "0001193125-26-076753",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1593538/000119312526076753/navi-20251231.htm",
+    "local_path": "data/raw/sec_10k/1593538_000119312526076753.html",
+    "sha256": "989aba3ffab1a07e797559cb50f17dbfe4f7e0cf9a4a8fce06207c2af7b70de4"
+  },
+  {
+    "cik": 2027317,
+    "company": "Curbline Properties Corp.",
+    "accession_number": "0001193125-26-043647",
+    "filing_date": "2026-02-10",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2027317/000119312526043647/curb-20251231.htm",
+    "local_path": "data/raw/sec_10k/2027317_000119312526043647.html",
+    "sha256": "20d8696b6e440db64d5b7c876387d413b4fcdde044851dcedb685d6e41e968d6"
+  },
+  {
+    "cik": 1618181,
+    "company": "World Gold Trust",
+    "accession_number": "0001437749-25-036313",
+    "filing_date": "2025-11-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1618181/000143774925036313/gldm20250930_10k.htm",
+    "local_path": "data/raw/sec_10k/1618181_000143774925036313.html",
+    "sha256": "4111c341490031f7c2f02db53be8d848a9d83368a70ae129073cf0ea62d3bb4b"
+  },
+  {
+    "cik": 933034,
+    "company": "STRATTEC SECURITY CORP",
+    "accession_number": "0000950170-25-111218",
+    "filing_date": "2025-08-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/933034/000095017025111218/strt-20250629.htm",
+    "local_path": "data/raw/sec_10k/933034_000095017025111218.html",
+    "sha256": "0333191c428ed39e6112f1282d05c41e813f3e71f1d2a2bcbe597ece836dd305"
+  },
+  {
+    "cik": 1401835,
+    "company": "Star Gold Corp.",
+    "accession_number": "0001437749-26-024054",
+    "filing_date": "2026-07-22",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1401835/000143774926024054/srgz20260430_10k.htm",
+    "local_path": "data/raw/sec_10k/1401835_000143774926024054.html",
+    "sha256": "ae886db3f38fc182515fa98d9254f4a8caaa3458dc0a763551d1e0ea37dd0ec6"
+  },
+  {
+    "cik": 2029769,
+    "company": "Oaktree Acquisition Corp. III Life Sciences",
+    "accession_number": "0001193125-26-126536",
+    "filing_date": "2026-03-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2029769/000119312526126536/d82009d10k.htm",
+    "local_path": "data/raw/sec_10k/2029769_000119312526126536.html",
+    "sha256": "4584cd68ad77d2c2b9853eedde96e40625920962ccf067a79893ab418385330c"
+  },
+  {
+    "cik": 2079106,
+    "company": "LaFayette Acquisition Corp.",
+    "accession_number": "0001213900-26-025877",
+    "filing_date": "2026-03-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2079106/000121390026025877/ea0279167-10k_lafayette.htm",
+    "local_path": "data/raw/sec_10k/2079106_000121390026025877.html",
+    "sha256": "cc0c9e8135e5bbaad84493e0cf974b163d7ad7bc0728310ce2305bc2230cc82e"
+  },
+  {
+    "cik": 1376139,
+    "company": "CVR ENERGY INC",
+    "accession_number": "0001376139-26-000014",
+    "filing_date": "2026-02-18",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1376139/000137613926000014/cvi-20251231.htm",
+    "local_path": "data/raw/sec_10k/1376139_000137613926000014.html",
+    "sha256": "3f04afdf567e0024b4856f5f221e3e431e00a13b23ad6969761a8c7bf45571a2"
+  },
+  {
+    "cik": 1918414,
+    "company": "Newbridge Acquisition Ltd",
+    "accession_number": "0001213900-26-032632",
+    "filing_date": "2026-03-23",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1918414/000121390026032632/ea0282475-10k_newbridge.htm",
+    "local_path": "data/raw/sec_10k/1918414_000121390026032632.html",
+    "sha256": "ef79a6ccbb42529ad5674c435c205b1453c3a4f5e0aaaeba0fd93ae71d27f018"
+  },
+  {
+    "cik": 49600,
+    "company": "EASTGROUP PROPERTIES INC",
+    "accession_number": "0000049600-26-000010",
+    "filing_date": "2026-02-11",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/49600/000004960026000010/egp-20251231.htm",
+    "local_path": "data/raw/sec_10k/49600_000004960026000010.html",
+    "sha256": "789d118edfec3916397a1be2b431466006707479e3b1264407e66989aedb3517"
+  },
+  {
+    "cik": 1071236,
+    "company": "RED RIVER BANCSHARES INC",
+    "accession_number": "0001071236-26-000027",
+    "filing_date": "2026-03-13",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1071236/000107123626000027/rrbi-20251231.htm",
+    "local_path": "data/raw/sec_10k/1071236_000107123626000027.html",
+    "sha256": "014a1dadd7f4c302052f7125f8ab3c4bf4b2a4ea12bffe331a67550a45fc5cda"
+  },
+  {
+    "cik": 78128,
+    "company": "Essential Utilities, Inc.",
+    "accession_number": "0000078128-26-000050",
+    "filing_date": "2026-02-26",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/78128/000007812826000050/wtrg-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/78128_000007812826000050.html",
+    "sha256": "bbb5ce50178df75143d5b1ce9d3031e15176005172fd3663bc45b44730f428f7"
+  },
+  {
+    "cik": 1474098,
+    "company": "Pebblebrook Hotel Trust",
+    "accession_number": "0001474098-26-000015",
+    "filing_date": "2026-02-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+    "local_path": "data/raw/sec_10k/1474098_000147409826000015.html",
+    "sha256": "97e9421bbcdd4b9bbd9a98a00cf1172c3c693e658c6f604ae074cf3f53f4f3f4"
+  },
+  {
+    "cik": 1285785,
+    "company": "MOSAIC CO",
+    "accession_number": "0001285785-26-000017",
+    "filing_date": "2026-02-27",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000017/mos-20251231.htm",
+    "local_path": "data/raw/sec_10k/1285785_000128578526000017.html",
+    "sha256": "87469edd64d59c3cde514458afea00ee78e0497d0b03b71a7392793f7b8d78a4"
+  },
+  {
+    "cik": 1849253,
+    "company": "RYAN SPECIALTY HOLDINGS, INC.",
+    "accession_number": "0001849253-26-000006",
+    "filing_date": "2026-02-13",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1849253/000184925326000006/ryan-20251231.htm",
+    "local_path": "data/raw/sec_10k/1849253_000184925326000006.html",
+    "sha256": "191025c5c9e56d4c6b7129fcca463d6ad8a03291247be10f58f561d19eac4b86"
+  },
+  {
+    "cik": 80035,
+    "company": "PREFORMED LINE PRODUCTS CO",
+    "accession_number": "0000080035-26-000007",
+    "filing_date": "2026-03-05",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/80035/000008003526000007/plpc-20251231.htm",
+    "local_path": "data/raw/sec_10k/80035_000008003526000007.html",
+    "sha256": "13342e9c96baa3cd949474fc7b7b31e85e0bca5e6631ea972568a2169254afc3"
+  },
+  {
+    "cik": 2031561,
+    "company": "Aldel Financial II Inc.",
+    "accession_number": "0001104659-26-033988",
+    "filing_date": "2026-03-25",
+    "primary_document_url": "https://www.sec.gov/Archives/edgar/data/2031561/000110465926033988/aldf-20251231x10k.htm",
+    "local_path": "data/raw/sec_10k/2031561_000110465926033988.html",
+    "sha256": "a8f51b286ebc8f4cf51492f78d5b1c19b7508b2325c9b2b7d8aeb9c39fc42c5e"
+  }
+]
