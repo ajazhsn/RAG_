@@ -1,0 +1,59 @@
+name: CI
+
+# Design decision: this pipeline does NOT re-run the full RAG pipeline
+# (embedding, retrieval, generation) on every push. That would mean hitting
+# the Groq API and downloading multi-GB models on every commit — real cost,
+# real flakiness, and a security surface for exposing API keys in a public
+# repo's CI logs. Instead:
+#   - `test`: fast, deterministic unit tests on the EVALUATION HARNESS itself
+#     (Recall@k, nDCG, Cohen's kappa, numeric extraction) — this is the code
+#     every ablation table in this project depends on, so regressions here
+#     are exactly what a CI gate should catch.
+#   - `docker-build`: proves the serving container actually builds and the
+#     API starts cleanly — deployment-readiness, not model-quality regression.
+# Full pipeline re-evaluation (embedding sweeps, generation quality, judge
+# calibration) is run on-demand/manually, not per-commit — the same tradeoff
+# most teams make once real API costs are involved.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest lxml beautifulsoup4
+
+      - name: Run evaluation harness regression tests
+        run: pytest tests/ -v
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build serving image
+        run: docker build -t rag-eval-api:ci .
+
+      # NOTE: we verify the image BUILDS successfully (dependencies resolve,
+      # code has no import-time errors, Dockerfile is correct) but do not
+      # attempt to actually run the container here. The API loads embeddings
+      # and the corpus at startup, and those files are intentionally excluded
+      # from version control (see .gitignore / Dockerfile comments) — a real
+      # deployment mounts them from a volume or object storage. A genuine
+      # startup smoke test belongs in a deploy-time check where that data
+      # volume is actually available, not in this repo's CI.
